@@ -9,7 +9,7 @@
 
 ### Repositorios
 * [frontend_app](https://github.com/AgustinStringa/tp-dsw-frontendapp)
-* [backend app](https://github.com/AgustinStringa/tp-dsw-backendapp)
+* [backend_app](https://github.com/AgustinStringa/tp-dsw-backendapp)
 
 ## Tema
 ### Descripción
