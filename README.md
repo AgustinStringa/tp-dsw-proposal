@@ -17,9 +17,8 @@ El sitio web ofrecerá la gestión de un gimnasio no sólo de sus clientes, sino
 
 
 ### Modelo
-![imagen del modelo]()
+![imagen del modelo](https://drive.google.com/file/d/1brjXgvFV6FmMOpHA6S5FL4rNYijHlRnv/view?usp=sharing)
 
-*Nota*: incluir un link con la imagen de un modelo, puede ser modelo de dominio, diagrama de clases, DER. Si lo prefieren pueden utilizar diagramas con [Mermaid](https://mermaid.js.org) en lugar de imágenes.
 
 ## Alcance Funcional 
 
@@ -37,7 +36,7 @@ Regularidad:
 Adicionales para Aprobación
 |Req|Detalle|
 |:-|:-|
-|CRUD |1. CRUD Meta<br>2. CRUD Progreso<br>3. CRUD Noticias<br>4. CRUD <br>5. CRUD <br>6. CRUD <br>7. CRUD |
+|CRUD |1. CRUD Meta<br>2. CRUD Progreso<br>3. CRUD Noticias<br>4. CRUD Precio tipo de membresía<br>5. CRUD Pago<br>6. CRUD Tipo de clase<br>7. CRUD Ejercicio hecho de rutina|
 |CUU/Epic|1. Crear una rutina mensual<br>2. Obtener listado de cuotas pendientes<br>3. |
 
 
@@ -46,5 +45,5 @@ Adicionales para Aprobación
 |Req|Detalle|
 |:-|:-|
 |Listados |1. Listado de clases filtrado por día => detalle de cantidad de usuarios inscriptos y profesor/es que la dan <br>2. |
-|CUU/Epic|1. <br>2. |
+|CUU/Epic|1. Registrar nuevas medidas corporales<br>2. |
 |Otros|1. Aviso de finalización de membresía por mail e inbox de la web|
