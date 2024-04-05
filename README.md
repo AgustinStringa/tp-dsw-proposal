@@ -3,9 +3,9 @@
 ## Grupo
 ### Integrantes
 * 51338 - Stringa, Agustín Nicolás
-* 50376	- Danteo Elías Tomás
-* 51445 - Aarón De Bernardo
-* 51424 - Francisca Gramaglia
+* 50376	- Danteo, Elías Tomás
+* 51445 - De Bernardo, Aarón
+* 51424 - Gramaglia, Francisca 
 
 ### Repositorios
 * [frontend_app](https://github.com/AgustinStringa/tp-dsw-frontendapp)
