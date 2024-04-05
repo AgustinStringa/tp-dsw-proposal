@@ -17,7 +17,7 @@ El sitio web ofrecerá la gestión de un gimnasio no sólo de sus clientes, sino
 
 
 ### Modelo
-![imagen del modelo](https://drive.google.com/file/d/1brjXgvFV6FmMOpHA6S5FL4rNYijHlRnv/view?usp=sharing)
+[imagen del modelo](https://drive.google.com/file/d/1brjXgvFV6FmMOpHA6S5FL4rNYijHlRnv/view?usp=sharing)
 
 
 ## Alcance Funcional 
