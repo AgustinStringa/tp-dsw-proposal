@@ -36,8 +36,8 @@ Regularidad:
 Adicionales para Aprobación
 |Req|Detalle|
 |:-|:-|
-|CRUD |1. CRUD Meta<br>2. CRUD Progreso<br>3. CRUD Noticias<br>4. CRUD Precio tipo de membresía<br>5. CRUD Pago<br>6. CRUD Tipo de clase<br>7. CRUD Ejercicio hecho de rutina|
-|CUU/Epic|1. Crear una rutina mensual<br>2. Obtener listado de cuotas pendientes<br>3. |
+|CRUD |1. CRUD Meta<br>2. CRUD Progreso<br>3. CRUD Noticias<br>4. CRUD Pago<br>5. CRUD Ejercicio hecho de rutina<br>6.CRUD precio de tipo de rutina (en observacion)|
+|CUU/Epic|1. Asignar Clase<br>2. Obtener listado de cuotas pendientes de pago |
 
 
 ### Alcance Adicional Voluntario
