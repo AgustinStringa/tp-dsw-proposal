@@ -27,7 +27,7 @@ El sitio web ofrecerá la gestión de un gimnasio no sólo de sus clientes, sino
 Regularidad:
 |Req|Detalle|
 |:-|:-|
-|CRUD simple|1. CRUD Cliente<br>2. CRUD Ejercicio<br>3. CRUD Tipo de membresía<br>4. CRUD Entrenador|
+|CRUD simple|1. CRUD Entrenador<br>2. CRUD Ejercicio<br>3. CRUD Tipo de membresía<br>4. CRUD Cliente |
 |CRUD dependiente|1. CRUD Precio de tipo de membresía {depende de} CRUD Tipo de membresía<br>2. CRUD  Progreso {depende de} CRUD Cliente|
 |Listado<br>+<br>detalle| 1. Listado de cliente filtrado por nombre a buscar, muestra nombre, apellido y correo electrónico de los clientes que coinciden con el texto ingresado => detalle CRUD Cliente<br> 2. Listado de precios actuales de las membresías, filtrando por fecha de última actualización => detalle muestra precio de la membresía y cantidad de clientes anotados|
 |CUU/Epic|1. Cambiar el tipo de membresía de un cliente<br>2. Inscribirse a una clase|
