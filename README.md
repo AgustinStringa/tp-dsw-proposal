@@ -13,7 +13,11 @@
 
 ## Tema
 ### Descripción
-El sitio web ofrecerá la gestión de un gimnasio no sólo de sus clientes, sino también de sus entrenadores. Además, incluirá creación de rutinas con videos demostrativos, sistema de pagos con alertas y herramientas de comunicación interna (mensajería).
+El sitio web ofrecerá las distintas herramientas destinadas a la gestión del Gimnasio Iron Haven.<br>
+Se podrá tener un registro de todos los clientes, con sus membresías contratadas y pagos de las mismas. Los clientes podrán definir metas que los motiven a mejorar su estado físico. También tendrán a su disposición el registro de sus medidas corporales.<br>
+El gimnasio dicta diferentes clases, por lo que es de interés que los clientes puedan inscribirse a las mismas.<br>
+Por otra parte, los entrenadores contarán con la posibilidad de crear rutinas para los clientes, asignando ejercicios que tendrán videos explicativos.<br>
+Sería interesante que los entrenadores (administradores del sitio) puedan redactar noticias que sean visibles para todos los visitantes del sitio web del gimnasio. Por último, un sistema de chat añadiría mucho valor a los procesos de negocio.
 
 
 ### Modelo
@@ -27,8 +31,8 @@ El sitio web ofrecerá la gestión de un gimnasio no sólo de sus clientes, sino
 Regularidad:
 |Req|Detalle|
 |:-|:-|
-|CRUD simple|1. CRUD Entrenador<br>2. CRUD Tipo de clase<br>3. CRUD Tipo de membresía<br>4. CRUD Cliente |
-|CRUD dependiente|1. CRUD Ejercicio {depende de} CRUD Entrenador <br>2. CRUD  Progreso {depende de} CRUD Cliente|
+|CRUD simple|1. CRUD Trainer<br>2. CRUD ClassType<br>3. CRUD Exercise<br>4. CRUD Client<br>5. CRUD MembershipType|
+|CRUD dependiente|1. CRUD Class {depende de ClassType}<br>2. CRUD  Registration {depende de Class y Client}<br>3. CRUD Membership {depende de Client y MembershipType}<br>4. CRUD Routine {depende de Client, Trainer y Exercise}|
 |Listado<br>+<br>detalle| 1. Listado de cliente filtrado por nombre a buscar, muestra nombre, apellido y correo electrónico de los clientes que coinciden con el texto ingresado => detalle CRUD Cliente<br> 2. Listado de precios actuales de las membresías, filtrado por fecha de última actualización => detalle muestra precio de la membresía y cantidad de clientes anotados|
 |CUU/Epic|1. Asignar Rutina<br>2. Registrar ejecución de ejercicio (Cliente)|
 
@@ -36,8 +40,8 @@ Regularidad:
 Adicionales para Aprobación
 |Req|Detalle|
 |:-|:-|
-|CRUD |1. CRUD Meta<br>2. CRUD Progreso<br>3. CRUD Noticias<br>4. CRUD Pago<br>5. CRUD Ejercicio hecho de rutina<br>6.CRUD precio de tipo de rutina (en observacion)|
-|CUU/Epic|1. Asignar Clase<br>2. Obtener listado de cuotas pendientes de pago |
+|CRUD |1. CRUD Goal<br>2. CRUD Progress<br>3. CRUD News<br>4. CRUD Payment<br>5. CRUD Message|
+|CUU/Epic|1. Inscribirse a una Clase<br>2. Obtener listado de clientes con membresías pendientes de pago |
 
 
 ### Alcance Adicional Voluntario
@@ -46,4 +50,4 @@ Adicionales para Aprobación
 |:-|:-|
 |Listados |1. Listado de clases filtrado por día => detalle de cantidad de usuarios inscriptos y profesor/es que la dan <br>2. Listado de ejercicios por cliente => detalle de tipo de ejercicios, cantidad de series, repeticiones que se deben realizar junto con su video descriptivo |
 |CUU/Epic|1. Registrar nuevas medidas corporales<br>2. |
-|Otros|1. Aviso de finalización de membresía por mail e inbox de la web|
+|Otros|1. Aviso de finalización de membresía por mail e inbox de la web<br>2. Notificación de registro al sistema por mail|
