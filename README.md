@@ -33,7 +33,7 @@ Regularidad:
 |:-|:-|
 |CRUD simple|1. CRUD Trainer<br>2. CRUD ClassType<br>3. CRUD Exercise<br>4. CRUD Client<br>5. CRUD MembershipType|
 |CRUD dependiente|1. CRUD Class {depende de ClassType}<br>2. CRUD  Registration {depende de Class y Client}<br>3. CRUD Membership {depende de Client y MembershipType}<br>4. CRUD Routine {depende de Client, Trainer y Exercise}|
-|Listado<br>+<br>detalle| 1. Listado de cliente filtrado por nombre a buscar, muestra nombre, apellido y correo electrónico de los clientes que coinciden con el texto ingresado => detalle CRUD Cliente<br> 2. Listado de precios actuales de las membresías, filtrado por fecha de última actualización => detalle muestra precio de la membresía y cantidad de clientes anotados|
+|Listado<br>+<br>detalle| 1. Listado de cliente filtrado por nombre a buscar, muestra nombre, apellido y correo electrónico de los clientes que coinciden con el texto ingresado => detalle CRUD Cliente<br> 2. Listado de clases filtrado por día, entrenador y tipo de clase => detalle CRUD Clases|
 |CUU/Epic|1. Asignar Rutina<br>2. Registrar ejecución de ejercicio (Cliente)|
 
 
@@ -48,6 +48,6 @@ Adicionales para Aprobación
 
 |Req|Detalle|
 |:-|:-|
-|Listados |1. Listado de clases filtrado por día => detalle de cantidad de usuarios inscriptos y profesor/es que la dan <br>2. Listado de ejercicios por cliente => detalle de tipo de ejercicios, cantidad de series, repeticiones que se deben realizar junto con su video descriptivo |
+|Listados |1.  Listado de precios actuales de las membresías, filtrado por fecha de última actualización => detalle muestra precio de la membresía y cantidad de clientes anotados <br>2. Listado de ejercicios por cliente => detalle de tipo de ejercicios, cantidad de series, repeticiones que se deben realizar junto con su video descriptivo |
 |CUU/Epic|1. Registrar nuevas medidas corporales<br>2. |
 |Otros|1. Aviso de finalización de membresía por mail e inbox de la web<br>2. Notificación de registro al sistema por mail|
