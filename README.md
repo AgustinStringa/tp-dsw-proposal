@@ -21,7 +21,7 @@ Los usuarios de cualquier tipo, pueden comunicarse a través de un chat. Además
 
 
 ### Modelo
-[enlace al modelo](https://github.com/AgustinStringa/tp-dsw-proposal/blob/main/modelo-dominio-gimnasio.drawio.pdf)
+[Enlace al modelo](https://github.com/AgustinStringa/tp-dsw-proposal/blob/main/modelo-dominio-gimnasio.drawio.pdf)
 
 
 ## Alcance Funcional 
@@ -33,8 +33,8 @@ Regularidad:
 |:-|:-|
 |CRUD simple|1. CRUD Trainer<br>2. CRUD ClassType<br>3. CRUD Exercise<br>4. CRUD Client<br>5. CRUD MembershipType|
 |CRUD dependiente|1. CRUD Class {depende de ClassType}<br>2. CRUD  Registration {depende de Class y Client}<br>3. CRUD Membership {depende de Client y MembershipType}<br>4. CRUD Routine {depende de Client, Trainer y Exercise}|
-|Listado<br>+<br>detalle| 1. Listado de clientes filtrado por nombre a buscar, muestra nombre, apellido y correo electrónico de los clientes que coinciden con el texto ingresado => detalle CRUD Cliente<br> 2. Listado de clases filtrado por día, entrenador y tipo de clase => detalle CRUD Clases|
-|CUU/Epic|1. Asignar Rutina<br>2. Registrar ejecución de ejercicio (Cliente)|
+|Listado<br>+<br>detalle| 1. Listado de clientes filtrado por nombre y apellido o dni a buscar, muestra nombre, apellido y correo electrónico de los clientes que coinciden con el texto ingresado => detalle CRUD Cliente<br> 2. Listado de clases filtrado por día, entrenador y tipo de clase => detalle CRUD Clases|
+|CUU/Epic|1. Crear Rutina<br>2. Registrar ejecución de ejercicio (Cliente)|
 
 
 Adicionales para Aprobación
@@ -48,6 +48,6 @@ Adicionales para Aprobación
 
 |Req|Detalle|
 |:-|:-|
-|Listados |1.  Listado de precios actuales de las membresías, filtrado por fecha de última actualización => detalle muestra precio de la membresía y cantidad de clientes anotados <br>2. Listado de ejercicios por cliente => detalle de tipo de ejercicios, cantidad de series, repeticiones que se deben realizar junto con su video descriptivo |
+|Listados |1. Listado de ejercicios filtrado por nombre y descripcion del ejercicio, muestra nombre, descripcion de los ejercicios que coinciden con el texto ingresado => detalle CRUD Exercise<br>2. Listado de ejercicios por cliente => detalle de tipo de ejercicios, cantidad de series, repeticiones que se deben realizar junto con su video descriptivo<br>3. Listado de Entrenadores filtrado por nombre y apellido o dni, muestra nombre, apellido, dni y correo electronico de los entrenadores que coinciden con el texto ingresado => detalle CRUD Trainer<br>4. Listado de los Tipos de Membresía filtrado por nombre, muestra nombre, descripcion y precio de los tipos de membresía que coinciden con el texto ingresado => detalle CRUD MembershipType<br>5. Listado de las clases inscriptas por el cliente con la posibilidad de una desinscripción |
 |CUU/Epic|1. Realizar la compra de una membresía de manera online (para el cliente mediante Stripe)<br>2. Aviso de finalización de membresía por correo electrónico, mediante una tarea automarizada |
-|Otros|1. Notificación de registro al sistema por mail<br>2. Utilización de WebSocket para el live-chat|
+|Otros|1. Notificación de registro al sistema por mail<br>2. Utilización de WebSocket para un servicio de mensajería en tiempo real entre los clientes y entrenadores del gimnasio|
